@@ -1,0 +1,556 @@
+*
+{
+    box-sizing: border-box !important;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+body
+{
+    font-family: 'Poppins', sans-serif , 'Roboto';
+    line-height: 1.80857;
+    font-weight: normal;
+    background-color: rgb(223, 223, 223);
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/*********** navbar************/
+.navigate
+{
+    background: #3b516e;
+    border: none;
+    width: 100%;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  
+}
+.row > div 
+{
+    float: left; 
+}
+.navigate .row_right
+{
+    position: relative;
+    left: 80vh;
+    top: 2vh;
+}
+.navigate .row_right li
+{
+    display: inline;
+    float: left;
+    padding: none;
+    padding-left: 30px; 
+}
+.navigate .row_right li > a ,
+.text_bg > a
+{
+    color: rgb(204, 204, 204);
+    padding: 7px;
+    font-size: large;
+    transition: ease all 0.5s;
+}
+.navigate .row_right li > a:link,
+.text_bg > a:link
+{
+   text-decoration: none;
+   background-color: transparent;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+
+}
+.navigate .row_right li > a:hover , 
+.text_bg > a:hover
+{
+    text-decoration: none;
+    background-color: #0fc9da;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px ;
+    border-radius: 20px ; 
+}
+.dropbtn 
+
+{
+    background-color: #0fc9da;
+    color: rgb(255, 255, 255);
+    padding: 14px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px; 
+    width: 175px;
+    text-transform:capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    transition: ease all 0.5s;
+}
+.dropdown 
+{
+    position: absolute;
+    top: 4px;
+    display: inline-block;
+    padding: none;
+    padding-left: 65px;
+   
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+.dropdown:hover .dropbtn 
+
+{
+  background-color: #9c9c9c;
+  border-radius: 30px; 
+  color: #f0f0f0;
+}
+.navigate .row_left
+{
+   position: absolute;
+   left: 30vh;
+   top: 1.5vh;
+}
+.navigate .row_left > span > a
+{
+    color: rgb(204, 204, 204);
+    transition: ease all 0.5s;   
+}
+.navigate .row_left > span > a:link
+{
+    text-decoration: none;
+   background-color: transparent;
+   text-align: center;
+}
+.navigate .row_left > span > a:hover
+{
+    text-decoration: none;
+    background-color: transparent;
+}
+.navigate .row_left img
+{
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+}
+.navigate .row_left span
+{
+    font-family: 'Amiri', serif;
+    font-family: 'Lobster Two', cursive;
+    font-size: larger;
+    font-weight:bold; 
+    margin-left: 1vh; 
+    position: absolute; 
+    margin-top: 2.30vh; 
+    width: 90px;
+    color: rgb(204, 204, 204) ;
+}
+/******************** navbar ************** */
+/* ***************home banner ************** */
+.banner>.contaner
+{
+    background-image: url(../images/home/banner2.jpg);
+    background-attachment: fixed;
+    margin-top: 80px; 
+    height: 95vh;
+    background-position: center; 
+}
+.banner .text_bg
+{
+   background-color:transparent;
+   width: 120vh;
+   height: 65vh;
+   position: absolute;
+   top: 37vh;
+   left: 40vh; 
+   text-align: center;
+}
+.banner .text_bg > span 
+{
+    font-size: 75px;
+    line-height: 80px;
+    color: #0fc9da;
+    text-transform: uppercase;
+}
+.banner .text_bg > h1
+{
+    color: #fff;
+    padding-top: 20px;
+    font-size: 70px;
+    line-height: 85px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0;
+    position: relative;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-family: inherit;
+    display: block;
+}
+.banner .text_bg > p 
+{
+    font-size: 17px;
+    display: block;
+    color: #fff;
+    line-height: 30px;
+    padding-bottom: 50px;
+    font-weight: 400;
+    margin: 0px;
+}
+.banner .text_bg > a
+{
+    font-size: 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 0px;
+    max-width: 200px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: ease all 0.5s;
+}
+.banner .text_bg >a:hover
+{
+    font-size: 20px;
+    background-color: #0fc9da;
+    color:#fff;
+    padding: 10px 0px;
+    max-width: 200px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: ease all 0.5s;
+
+}
+.home_page .gallery
+{
+    height: 90vh; 
+    padding-top: 85px;
+    margin-bottom: 30px;
+}
+.home_page .contaner 
+{
+    text-align: center;
+}
+.home_page .gallery .contaner > .top_text h2
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 501;
+    font-size: 36px;  
+}
+.home_page .gallery .contaner > .top_text h3
+{ 
+    color: #164bbe;
+}
+.home_page .gallery .contaner > .row 
+{
+    float: left;
+    display: block;
+    height: 40vh; 
+    width: 100%;
+    
+}
+.home_page .gallery .contaner > .row .left_row span ,
+.home_page .gallery .contaner > .row .medium span, 
+.home_page .gallery .contaner > .row .right_row span
+{
+    display: block;
+    height: 40vh ;
+    width: 50vh;
+    background-color: #f0f0f0;
+    margin-left: 20px;
+    position: relative;
+    left: 22vh;
+    right: 30vh;
+    border-radius: 20px;
+    padding-top: 60px;
+    font-size: 25px;
+}
+.home_page .gallery .contaner > .row .right_row span img ,
+.home_page .gallery .contaner > .row .left_row span img,
+.home_page .gallery .contaner > .row .medium span img
+{
+    width: 120px;
+    height: 110px;
+    display: block;
+    position: relative;
+    left: 130px;
+}
+.home_page .gallery .contaner > .buttom_text> button
+{
+    background-color: transparent;
+    border: 2px solid rgb(33, 33, 190);
+    color: rgb(33, 33, 190);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 55px; 
+}
+.home_page .gallery .contaner > .buttom_text> button:hover
+{
+    background-color: #3b516e;
+    color: antiquewhite;
+    border: none;
+    transition: ease all 0.5s;
+}
+/*  ************** home banner ******************* */
+.home_page > .slider_ > .back_to_top
+{
+    display: block;
+    text-align: center;
+    background: #ed4d2b;
+    color: #fff;
+    display: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    position: fixed;
+    padding-top: 50px;
+    bottom: 25px;
+    opacity: 0.7;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    z-index: 9999;
+
+}
+/* *************about slider ************* */
+.slider_two > .row{
+    background-color: transparent;
+    height: 90vh;
+    float: left; 
+    width: 200vh; 
+    display: flex;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 60px;
+}
+.slider_two > .row > .left_row
+{
+    width: 100vh;
+    padding: 10vh;
+    padding-left: 23vh;
+}
+.slider_two > .row > .left_row h2
+{
+    font-size: 30px;
+    font-weight: 35px;
+}
+.slider_two > .row > .left_row p
+{
+    font-size: 20px;
+}
+.slider_two > .row > .right_row video
+{
+    height: 450px;
+    margin-top: 40px;
+}
+/*  *************** about slider **************** */
+ /******************* team slider *********** */
+ .slider_three h2 
+ {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #0fc9da;
+    text-transform :uppercase;
+    position: absolute;
+    top: 286vh;
+    left: 40%;
+ }
+ .slider_three > .row
+ {
+     margin-left: 70px;
+     margin-right: 70px;
+     height: 900px;
+     position: absolute;
+     top: 299vh;   
+ }
+ .slider_three > .row > div img
+ {
+     width: 450px;
+     height: 500px;
+     padding: 10px;  
+ }
+ .slider_three > .row > div h3
+ {
+     text-align: center;
+     text-transform:capitalize;
+     font-size: 25px;
+     font-family: 'Times New Roman', Times, serif;
+     color: #68696b;
+ }
+ .slider_three > .progress_team
+ {
+     position: absolute;
+     top: 380vh;
+     left: 50px;
+     width: 500px;
+ }
+ .slider_three > .progress_team h3
+ {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #68696b;
+    text-transform :uppercase;
+ }
+ .slider_three > .progress_team h4
+ {
+    font-size: 20px;
+    font-weight: 200;
+    color: #68696b;
+    text-transform :uppercase;
+    display: inline;
+ }
+ .slider_three > .progress_team h4.degree
+ {
+    padding-left: 200px;
+ }
+ .slider_three > .progress_team progress
+ {
+     display: block;
+     width: 75%;
+     font-size: 12px;
+     line-height: 10px;
+ }
+/* *************  team slider **************** */
+ /****************** download div ************* */
+.home_page >.download
+{
+    background-color: #adc0c2;
+    margin-top: 230vh;
+    margin-left: 50vh;
+    height: 200px;
+    width: 800px;
+    text-align: center;  
+}
+.home_page > #box_shadow
+{
+    box-shadow: 5px 5px 5px 5px rgba(114, 112, 112, 0.5);
+}
+.home_page > .download p
+{
+    display: block;
+    width: 500px; 
+    float: left;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.home_page > .download a
+{
+    display: block;
+    float: right;
+    margin-top: 70px;
+    margin-right: 30px;
+}
+.home_page > .download a > button
+{
+    width: 180px;
+    height: 50px;
+}
+.home_page > .download a > button:hover
+{
+    background-color: #3b516e;
+    border-radius: 30px; 
+    color: #f0f0f0;
+}
+.home_page > .download a > button
+{
+    background-color: #d30707;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: none;
+    border-radius: 30px; 
+    text-transform:capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    transition: ease all 0.5s;
+}
+/* ************** download div ************** */
+
+.home_page >.slider_four
+{
+    background-color: #3b516e;
+    height: 310px;
+    margin-top: 145px;
+}
+.home_page >.slider_four > .row .left_row,
+.home_page >.slider_four > .row .meduiem1_row,
+.home_page >.slider_four > .row .meduieb2_row,
+.home_page >.slider_four > .row .right_row
+{
+    display: inline;
+    float: left;
+    width: 370px;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-top: 25px;
+}
+.home_page >.slider_four >.row >.meduiem1_row img
+{
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+}
+.home_page >.slider_four >.row >.meduiem1_row a 
+{
+    text-decoration: none;
+}
+.home_page > .slider_four > .text_con
+{
+    text-align: center;
+    font-size: 23px;
+    line-height: 10px;
+    font-weight: 200;
+    color: #030303;
+    text-transform:capitalize;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
